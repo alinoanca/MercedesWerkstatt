@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mercedes Werkstatt</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Mercedes Werkstatt</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Startseite</a></li>
+                <li><a href="#services">Dienste</a></li>
+                <li><a href="#bestellen">Ersatzteile bestellen</a></li>
+                <li><a href="#kontakt">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h2>Willkommen in unserer Mercedes Werkstatt</h2>
+        <p>Wir sind Ihre vertrauenswürdige Werkstatt für homologierte Ersatzteile und deren Montage.</p>
+    </section>
+
+    <section id="services">
+        <h2>Unsere Dienste</h2>
+        <ul>
+            <li>Ersatzteile bestellen und montieren</li>
+            <li>Qualifizierte Mechaniker</li>
+            <li>Schneller und zuverlässiger Service</li>
+        </ul>
+    </section>
+
+    <section id="bestellen">
+        <h2>Bestellen Sie Ihre homologierten Ersatzteile</h2>
+        <form id="orderForm">
+            <label for="part">Ersatzteil:</label>
+            <input type="text" id="part" name="part" required>
+            
+            <label for="quantity">Menge:</label>
+            <input type="number" id="quantity" name="quantity" min="1" required>
+            
+            <button type="submit">Bestellen</button>
+        </form>
+        <div id="confirmation"></div>
+    </section>
+
+    <section id="kontakt">
+        <h2>Kontakt</h2>
+        <p>Email: kontakt@mercedeswerkstatt.de</p>
+        <p>Telefon: +49 123 456 7890</p>
+        <p>Adresse: Musterstraße 1, 10115 Berlin</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Mercedes Werkstatt. Alle Rechte vorbehalten.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
